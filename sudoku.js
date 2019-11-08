@@ -33,7 +33,7 @@ gameSolution(solutionBoard);
 console.table(solutionBoard);
 
 let button;
-let level;
+//let level;
 function setup()
 {
   createCanvas(540,540);
@@ -41,13 +41,14 @@ function setup()
  button = createButton('check your puzzle here');
  button.position(300, 125);
  button.mousePressed(resultTest);
+/*
  level = createSelect();
  level.position(115, 75);
  level.option('easy');
  level.option('normal');
  level.option('hard');
  level.changed(levelSelection);
-
+*/
 }
 
 let value = 0;
@@ -126,7 +127,7 @@ function resultTest()
   }
   console.log("testing");
 }
-
+/*
 function levelSelection()
 {
   let m_level = level.value();
@@ -228,7 +229,7 @@ function levelSelection()
   }
 }
 
-
+*/
 function gameSolution(gameBoard)
 {
   var unValidVal = {};
@@ -291,5 +292,5 @@ function gameSolution(gameBoard)
     }
   }
 
-  //return gameBoard;
+  return gameBoard;
 }
